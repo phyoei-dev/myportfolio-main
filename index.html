@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./image/plogo.png">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-sm md:text-base relative">
+    
+    <header class="z-[5] fixed w-full top-0 left-0 px-6 md:px-[60px] xl:px-20 2xl:px-[100px] py-6 2xl:py-7">
+        <div class="flex items-center justify-between zrcontainermd">
+            <div class="zrlogo">
+                 <a href="./index.html" class="text-[20px] transition-all duration-300 uppercase font-medium tracking-wider">Phyo Ei San</a>
+            </div>
+            <div class="hidden lg:!block lg:ml-5 zrmenu">
+                <div class="py-5 px-5 xs:px-10 w-full block lg:hidden zrmenuclose">
+                    <img class="ml-auto w-6 h-6 cursor-pointer" src="./image/close-icon.svg" alt="close menu" />
+                 </div>
+                <ul class="p-6 sm:p-10 lg:p-0 flex font-medium tracking-wide">
+                    <li class="border-b border-[rgb(0,0,0,0.1)] lg:border-b-0 py-5 lg:py-0 first:pt-0 lg:mr-10 last:mr-0"><a class="transition-all duration-300" href="#home">Home</a></li>
+                    <li class="border-b border-[rgb(0,0,0,0.1)] lg:border-b-0 py-5 lg:py-0 first:pt-0 lg:mr-10 last:mr-0"><a class="transition-all duration-300" href="#about">About</a></li>
+                    <li class="border-b border-[rgb(0,0,0,0.1)] lg:border-b-0 py-5 lg:py-0 first:pt-0 lg:mr-10 last:mr-0"><a class="transition-all duration-300" href="#work">Work</a></li>
+                    <li class="border-b border-[rgb(0,0,0,0.1)] lg:border-b-0 py-5 lg:py-0 first:pt-0 lg:mr-10 last:mr-0"><a class="transition-all duration-300" href="#education">Education</a></li>
+                    <li class="border-b border-[rgb(0,0,0,0.1)] lg:border-b-0 py-5 lg:py-0 first:pt-0 lg:mr-10 last:mr-0"><a class="transition-all duration-300" href="#projects">Projects</a></li>
+                    <li class="border-b border-[rgb(0,0,0,0.1)] lg:border-b-0 py-5 lg:py-0 first:pt-0 lg:mr-10 last:mr-0"><a class="transition-all duration-300" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="cursor-pointer block lg:hidden zrmobilemenu">
+                <img src="./image/menu-icon.svg" alt="menu icon" />
+            </div>
+        </div>
+    </header>
+    <main class="pt-[83px] min-h-screen">
+        <section id="home" class="!hidden px-6 flex flex-col justify-center min-h-[calc(100vh-83px)] zrhome">
+            <div class="py-12 flex flex-wrap md:flex-nowrap max-w-[800px] mx-auto">
+                <div class="mb-6 md:mb-0 w-full md:w-auto zrprofileimage">
+                    <img class="mt-5 rounded-lg max-w-[180px] max-h-[180px]" src="./image/phyo.jpg" alt="profile image"/>
+                </div>
+                <div class="w-full md:w-auto md:ml-10">
+                    <div class="zrcontent">
+                        <div class="zrstatictext">I'm a <span id="typing-text" class="text-danger"></span></div>                                             
+                    </div>
+                    <h1 class="text-[36px] sm:text-[40px] md:text-[44px] xl:text-[50px] font-bold zrtitle">Phyo Ei San</h1>
+                    <div class="mt-5 zrdescription">
+                        I'm  a full stack  and cross-platform developer. I build responsive, user-friendly apps using Angular for the frontend and C#.NET for the backend. I also create cross-platform mobile and desktop apps with .NET MAUI. I focus on clean, reliable code and a great user experience.                    </div>
+                    <div class="my-8 flex flex-nowrap text-sm md:text-base zrbtnContainer">
+                        <a download href="./PhyoEiSanCV.pdf" class="mr-3 min-w-[150px] md:min-w-[190px] py-[12px] px-6 md:px-[30px] zrbtn zrbtn-download">
+                            Download CV
+                        </a>
+                        <a href="#contact" id="zrContact" class="min-w-[150px] md:min-w-[190px] py-[12px] px-6 md:px-[30px] zrbtn zrbtn-contact">
+                            Contact
+                        </a>
+                    </div>
+                    <div class="zrsociallink">
+                        <a href="https://www.linkedin.com/in/phyoeisan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="mr-2 last:mr-0 inline-flex justify-center items-center"><img class="transition-all duration-300" src="./image/linkedin-icon.svg" alt="linkin icon"/></a>
+                        <a href="https://github.com/phyoeisan-dev" class="mr-2 last:mr-0 inline-flex justify-center items-center"><img class="transition-all duration-300" src="./image/github-icon.svg" alt="github icon"/></a>
+                        <a href="https://www.instagram.com/phyoeisan1234/profilecard/?igsh=dzdjMjA0aXozZW9j" class="mr-2 last:mr-0 inline-flex justify-center items-center"><img class="transition-all duration-300" src="./image/instagram-icon.svg" alt="instragram icon"/></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="!hidden px-6 flex flex-col justify-center min-h-[calc(100vh-83px)] zrabout">
+            <div class="py-12 max-w-[650px] mx-auto tracking-wide">
+                <p class="mb-5 text-[14px] font-medium zrabouttitle">Welcome! Thanks for taking the time to check out my website.</p>
+                <div class="mb-8 last:mb-0">
+                    <h6 class="mb-3 font-semibold zraboutme">⚡ Introduction</h6>
+                    <ul class="list-disc pl-6">
+                        <li class="mb-2 last:mb-0">I am Phyo Ei San.</li>
+                        <li class="mb-2 last:mb-0">Experienced Full Stack Developer and System Analyst with over 5 years in the IT industry, including almost 3 years as a Full Stack Developer and 3+ years as a System Analyst</li>
+                        <li class="mb-2 last:mb-0">Proven expertise in designing and developing scalable web and desktop applications. Strong knowledge of both frontend and backend development, system analysis, and cloud technologies. </li>
+                        <li class="mb-2 last:mb-0">Committed to delivering user-focused solutions and maintaining high code quality standards.</li>
+                    </ul>
+                </div>
+                <div class="mb-8 last:mb-0">
+                    <h6 class="mb-3 font-semibold zraboutme">⚡ Skills & Expertise</h6>
+                    <ul class="list-disc pl-6">
+                        <li class="mb-2 last:mb-0"><strong>Languages & Frameworks: </strong><span>Angular, HTML, Syncfusion, jQuery, Bootstrap, CSS, Sass, JavaScript, TypeScript, C#, ASP.NET Core Web API, MVC, Windows Forms App, Entity Framework Core, Hangfire, SignalR, PWA, MAUI, Lambda Expressions, MVVM Pattern,Java.</span></li>
+                        <li class="mb-2 last:mb-0"><strong>DBMS: </strong><span>SQL Server 2014 - 2022, MySQL, SQLite and MangoDB .</span></li>
+                        <li class="mb-2 last:mb-0"><strong>Web Service : </strong><span>Restful API, Postman and Swagger API .</span></li>
+                        <li class="mb-2 last:mb-0"><strong>Hosting and Domain : </strong><span>IIS, SmarterASP.Net , Azure Cloud and AWS .</span></li>
+                        <li class="mb-2 last:mb-0"><strong>Version Control : </strong><span>GitHub and Azure DevOps.</span></li>
+                        <li class="mb-2 last:mb-0"><strong>Web Design :</strong><span>Photoshop and Figma.</span></li>
+                    </ul>
+                </div>
+                <div class="mb-8 last:mb-0">
+                    <h6 class="mb-3 font-semibold zraboutme">⚡ Functional Skill Set</h6>
+                    <ul class="list-disc pl-6">
+                        <li class="mb-2 last:mb-0">Quick Learning</li>
+                        <li class="mb-2 last:mb-0">Strong Problem-Solving & Debugging Skills</li>
+                        <li class="mb-2 last:mb-0">System Analysis & Requirement Gathering</li>
+                        <li class="mb-2 last:mb-0">Collaboration & Communication with Stakeholders</li>
+                    </ul>
+                </div>                
+            </div>
+        </section>
+
+        <section id="work" class="!hidden px-6 flex flex-col justify-center min-h-[calc(100vh-83px)] zrexperience">
+            <div class="py-12 tracking-wide">
+                <h2 class="mb-14 md:mb-16 lg:mb-20 text-center text-[30px] sm:text-[36px] lg:text-[40px] font-semibold">Work Experience</h2>
+                <div class="max-w-[900px] mx-auto zrexpcontent">
+
+                    <div class="mb-12 lg:mb-20 last:mb-0 w-full flex flex-row items-start gap-4 sm:gap-[30px] zrexpstepcontainer">
+                        <div class="min-w-[50px] md:flex-1 zrstepyear">
+                            <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-semibold mb-3">2019</h3>
+                        </div>
+                        <div class="flex-[0,0,28px] min-w-7 rounded-full w-7 h-7 zrstepprogress">
+                            <div class="zrstepprogressinner">
+                                <div class="zrstepprogressline" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1 zrstepcontentwrapper">
+                            <div class="zrstepcontent">
+                                <div>
+                                    <h4 class="transition-all duration-300 text-[18px] sm:text-[20px] lg:text-[22px] font-semibold mb-3">Senior System Analyst</h4>
+                                    <h5 class="transition-all duration-300 text-[13px] sm:text-[15px] lg:text-[17px] font-semibold mb-3"><a href="https://www.fnilife.com/">First National Life Insurance Co., Ltd</a></h5>
+                                    <div class="mb-3 zrdescription">
+                                        <ul class="list-disc pl-6">
+                                            <li class="mb-2 last:mb-0">Conducted user interviews and requirement gathering to define system requirements. </li>
+                                            <li class="mb-2 last:mb-0">Translated business needs into technical specifications and solutions.</li>
+                                            <li class="mb-2 last:mb-0">Supported and trained end-users during system implementation. </li>
+                                            <li class="mb-2 last:mb-0">Led system enhancements and coordinated with developers for implementation.</li>
+                                            <li class="mb-2 last:mb-0">Generated and retrieved reports using MSSQL to ensure data accuracy and timely delivery.</li>
+                                        </ul>
+                                    </div>
+                                    <p class="text-sm">07/2019 - 01/2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-12 lg:mb-20 last:mb-0 w-full flex flex-row md:flex-row-reverse items-start gap-4 sm:gap-[30px] zrexpstepcontainer">
+                        <div class="min-w-[50px] md:flex-1 zrstepyear">
+                            <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-semibold mb-3">2025</h3>
+                        </div>
+                        <div class="flex-[0,0,28px] min-w-7 rounded-full w-7 h-7 zrstepprogress">
+                            <div class="zrstepprogressinner">
+                                <div class="zrstepprogressline" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1 zrstepcontentwrapper">
+                            <div class="zrstepcontent">
+                                <div>
+                                     <h4 class="transition-all duration-300 text-[18px] sm:text-[20px] lg:text-[22px] font-semibold mb-3">Full Stack Developer</h4>
+                                     <h5 class="transition-all duration-300 text-[13px] sm:text-[15px] lg:text-[17px] font-semibold mb-3">Index Net Solution Co.,Ltd.</h5>
+                                    <div class="mb-3 zrdescription">
+                                        <ul class="list-disc pl-6">
+                                            <li class="mb-2 last:mb-0">Conducted user interviews and requirement gathering to Developed and maintained web applications using Angular , ASP.NET Core Web API  and MSSQL .</li>
+                                            <li class="mb-2 last:mb-0">Built and enhanced Windows desktop applications with Windows Forms App.</li>
+                                            <li class="mb-2 last:mb-0">Integrated FastReport, RDLC, PDF Make and Bold Report for dynamic report generation. </li>
+                                            <li class="mb-2 last:mb-0">Designed and implemented cross-platform native applications using MAUI.</li>
+                                            <li class="mb-2 last:mb-0">Collaborated with teams for continuous improvement and optimization. Handled code versioning and deployment via Azure DevOps and GitHub.</li>
+                                        </ul>
+                                    </div>
+                                    <p class="text-sm">01/2023 - 01/2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="!hidden px-6 flex flex-col justify-center min-h-[calc(100vh-83px)] zrproject">
+            <div class="py-12 tracking-wide">
+                <h2 class="mb-14 md:mb-16 lg:mb-20 text-center text-[30px] sm:text-[36px] lg:text-[40px] font-semibold">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px] max-w-[800px] xl:max-w-[1100px] 2xl:max-w-[1200px] mx-auto zrprocontent">
+                    <div class="flex flex-col rounded-lg p-6 sm:p-[30px] border zrprocard">
+                        <div class="my-5 zrprocontent">
+                              <h4 class="transition-all duration-300 text-[18px] sm:text-[20px] lg:text-[22px] font-semibold mb-3">PSW Terminal for Oil</h4>
+                            <div class="zrdescription">
+                                Developed a web-based application to manage terminal operations, including oil inventory, imports, and logistics. Implemented Angular,HTML ,Jquery ,Bootstrap,CSS,Typescript for the front-end, ASP.NET Web API for the back-end, Hangfire and MSSQL for data storage.Deployed the application on-premises with IIS and managed deployments via Azure DevOps. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col rounded-lg p-6 sm:p-[30px] border zrprocard">
+                        <div class="my-5 zrprocontent">
+                            <h4 class="transition-all duration-300 text-[18px] sm:text-[20px] lg:text-[22px] font-semibold mb-3">Warehouse Management System (WMS)</h4>
+                            <div class="zrdescription">
+                                Designed and implemented a system for tracking inventory, managing orders, and streamlining warehouse processes.
+Technologies: Angular,HTML ,Jquery ,Bootstrap,CSS,Typescript, ASP.NET Core Web API, MAUI, MSSQL, and Azure Cloud Services. 
+                            </div>
+                        </div>                      
+                    </div>
+                    <div class="flex flex-col rounded-lg p-6 sm:p-[30px] border zrprocard">
+                        <div class="my-5 zrprocontent">
+                            <h4 class="transition-all duration-300 text-[18px] sm:text-[20px] lg:text-[22px] font-semibold mb-3">eVisa Myanmar Website V3</h4>
+                            <div class="zrdescription">
+                                Created a web application for managing  eVisa applications v3, applying visa processes. Technologies:Angular,HTML ,Jquery ,Bootstrap,CSS,Typescript for front-end, ASP.NET Core Web App MVC(Control User app),Console App(migration process) ,ASP.NET Core Web API (back-end), MSSQL, Hang fire and Azure DevOps.
+                                Reference link is <a href="https://evisa.moip.gov.mm/">https://evisa.moip.gov.mm/</a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col rounded-lg p-6 sm:p-[30px] border zrprocard">
+                        <div class="my-5 zrprocontent">
+                            <h4 class="transition-all duration-300 text-[18px] sm:text-[20px] lg:text-[22px] font-semibold mb-3">TMS Gate Terminal System</h4>
+                            <div class="zrdescription">
+                                Developed a multi-project system for gate operations, weight bridge, and documentation. Technologies: Angular,HTML ,Jquery ,Bootstrap,CSS,Typescript for front-end, ASP.NET Core Web API ,Windows Forms App (.Net Framework) , MSSQL, GitHub. 
+                                Modules include TMS_Web (documentation and reporting), TMS_Gate (gate processes), TMS_Weight (weight bridge), and TMS_Api (common back-end logic).
+                            </div>
+                        </div>                     
+                    </div>
+                    <div class="flex flex-col rounded-lg p-6 sm:p-[30px] border zrprocard">
+                        <div class="my-5 zrprocontent">
+                            <h4 class="transition-all duration-300 text-[18px] sm:text-[20px] lg:text-[22px] font-semibold mb-3">YGW Management System</h4>
+                            <div class="zrdescription">
+                                A donation-based project for managing daily monastery school operations and donation tracking. Technologies: Angular,HTML ,Jquery ,Bootstrap,CSS,Typescript,  ASP.NET Core Web API, MSSQL, IIS, Azure DevOps.
+                            </div>
+                        </div>                      
+                    </div>
+                    <div class="flex flex-col rounded-lg p-6 sm:p-[30px] border zrprocard">
+                        <div class="my-5 zrprocontent">
+                            <h4 class="transition-all duration-300 text-[18px] sm:text-[20px] lg:text-[22px] font-semibold mb-3">Chat App </h4>
+                            <div class="zrdescription">
+                                Developed a messaging and file-sharing application for a logistics company. Technologies: Angular,HTML ,Jquery ,Bootstrap,CSS,Typescript,  ASP.NET Core Web API, SignalR, MSSQL, Azure Cloud Services, And Azure DevOps.
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="flex flex-col rounded-lg p-6 sm:p-[30px] border zrprocard">
+                        <div class="my-5 zrprocontent">
+                            <h4 class="transition-all duration-300 text-[18px] sm:text-[20px] lg:text-[22px] font-semibold mb-3">Medical Checkup System </h4>
+                            <div class="zrdescription">
+                                Developed a web-based application to streamline the medical checkup process, including patient registration, test result entry, and report retrieval.Technologies: Angular,HTML ,Syncfusion,PDFMake,Jquery ,Bootstrap,CSS,Typescript, ASP.NET Core Web API, MAUI, MSSQL, Azure Cloud Services and GitHub.
+                            </div>
+                        </div>                      
+                    </div>
+                    <div class="flex flex-col rounded-lg p-6 sm:p-[30px] border zrprocard">
+                        <div class="my-5 zrprocontent">
+                            <h4 class="transition-all duration-300 text-[18px] sm:text-[20px] lg:text-[22px] font-semibold mb-3">Gold Smith System </h4>
+                            <div class="zrdescription">
+                                Designed and implemented a web application for goldsmith shop management covering processes like receiving, purchasing, selling, ordering, and report generation.Technologies: Angular,HTML ,Syncfusion,PDFMake,Jquery ,Bootstrap,CSS,Typescript, ASP.NET Core Web API, MAUI, MSSQL, Azure Cloud Services and GitHub.
+                            </div>
+                        </div>                      
+                    </div>
+                    <div class="flex flex-col rounded-lg p-6 sm:p-[30px] border zrprocard">
+                        <div class="my-5 zrprocontent">
+                            <h4 class="transition-all duration-300 text-[18px] sm:text-[20px] lg:text-[22px] font-semibold mb-3">Charter Flight System </h4>
+                            <div class="zrdescription">
+                                Built a web-based system to manage charter flight ticketing workflows including planning, booking, ordering, invoicing, and reporting functionalities.Technologies: Angular,HTML ,Syncfusion,PDFMake,Jquery ,Bootstrap,CSS,Typescript, ASP.NET Core Web API, MAUI, MSSQL, Azure Cloud Services and GitHub.
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="!hidden px-6 flex flex-col justify-center min-h-[calc(100vh-83px)] zreducation">
+            <div class="py-12 tracking-wide">
+                <div class="mx-auto max-w-[900px]">
+                    <div class="mb-[30px] last:mb-0 rounded-lg border border-[rgb(0,0,0,0.1)] p-5 sm:p-6 transition-all duration-300 zreducard">
+                        <div class="flex justify-between flex-wrap sm:flex-nowrap items-center zreduheader">
+                            <div class="my-1 sm:my-0 flex items-center">
+                                <img class="rounded-lg max-w-[40px] sm:max-w-[46px] max-h-[40px] sm:max-h-[46px] p-1 bg-white border border-[rgb(0,0,0,0.1)]" src="./image/Logo_ucst.png" alt="" />
+                                <h5 class="ml-3 transition-all duration-300 text-[16px] sm:text-[18px] lg:text-[20px] font-semibold">Computer University</h5>
+                            </div>
+                            <div class="my-1 sm:my-0 text-sm sm:text-[16px] font-semibold text-[#5d5b5d]">
+                                2013 - 2018
+                            </div>
+                        </div>
+                        <div class="mt-5 zrdescription">
+                            <p class="mb-1 text-[#5d5b5d] zrlocation">Taungoo</p>
+                            <p class="font-semibold text-[16px] sm:text-lg zrdegree">Bachelor of computer science - BCSc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="!hidden px-6 flex flex-col justify-center min-h-[calc(100vh-83px)] zrcontact">
+            <div class="py-12 tracking-wide">
+                <div class="mx-auto max-w-[540px] py-7 sm:py-10 px-5 sm:px-10 bg-[#ffffffb3] rounded-xl zrcontactcardcontainer">
+                    <div class="mb-[30px] last:mb-0 transition-all duration-300 text-center bg-[#f8f9fc] p-5 sm:p-6 rounded-lg border border-[rgb(0,0,0,0.1)] hover:border-[rgb(0,0,0,0.2)] zrcontactcard zremail">
+                        <div class="zriconcontainer">
+                            <svg class="mx-auto max-w-[34px] w-[34px]" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                <path d="M32.33 5.99997C32.1937 5.98593 32.0563 5.98593 31.92 5.99997H3.92001C3.74056 6.00274 3.56229 6.02965 3.39001 6.07997L17.84 20.47L32.33 5.99997Z" fill="#ff291a"/>
+                                <path d="M33.81 7.39001L19.25 21.89C18.8753 22.2625 18.3684 22.4716 17.84 22.4716C17.3116 22.4716 16.8047 22.2625 16.43 21.89L1.99999 7.50001C1.95563 7.66306 1.93211 7.83106 1.92999 8.00001V28C1.92999 28.5304 2.14071 29.0392 2.51578 29.4142C2.89085 29.7893 3.39956 30 3.92999 30H31.93C32.4604 30 32.9691 29.7893 33.3442 29.4142C33.7193 29.0392 33.93 28.5304 33.93 28V8.00001C33.922 7.79167 33.8815 7.58585 33.81 7.39001ZM5.29999 28H3.90999V26.57L11.18 19.36L12.59 20.77L5.29999 28ZM31.91 28H30.51L23.22 20.77L24.63 19.36L31.9 26.57L31.91 28Z" fill="#ff291a"/>
+                            </svg>
+                        </div>
+                        <h6 class="mt-3 text-[16px] sm:text-lg font-semibold">Email</h6>
+                        <p class="mt-2 text-[13px] sm:text-[15px] text-[#212121b3]">
+                            <a href="mailto:hninthuzar.itworld@gmail.com">phyoeisan.237@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="mb-[30px] last:mb-0 transition-all duration-300 text-center bg-[#f8f9fc] p-6 rounded-lg border border-[rgb(0,0,0,0.1)] hover:border-[rgb(0,0,0,0.2)] zrcontactcard zrphone">
+                        <div class="zriconcontainer">
+                            <svg class="mx-auto max-w-[34px] w-[34px]" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.828 33.1995C22.668 33.12 16.5465 32.274 10.1355 25.8645C3.726 19.4535 2.8815 13.3335 2.8005 11.172C2.6805 7.87802 5.2035 4.67852 8.118 3.42902C8.46896 3.27747 8.8533 3.21977 9.2333 3.26158C9.61329 3.30339 9.97588 3.44328 10.2855 3.66752C12.6855 5.41652 14.3415 8.06252 15.7635 10.143C16.0764 10.6001 16.2102 11.1563 16.1393 11.7057C16.0685 12.2551 15.7981 12.7592 15.3795 13.122L12.453 15.2955C12.3116 15.3976 12.2121 15.5476 12.1729 15.7175C12.1337 15.8874 12.1576 16.0658 12.24 16.2195C12.903 17.424 14.082 19.218 15.432 20.568C16.782 21.918 18.6615 23.175 19.95 23.913C20.1116 24.0037 20.3017 24.0291 20.4814 23.9839C20.6611 23.9387 20.8166 23.8264 20.916 23.67L22.821 20.7705C23.1712 20.3053 23.6879 19.9936 24.2628 19.9008C24.8376 19.808 25.4261 19.9412 25.905 20.2725C28.0155 21.7335 30.4785 23.361 32.2815 25.6695C32.5239 25.9814 32.6782 26.3526 32.728 26.7445C32.7779 27.1363 32.7216 27.5344 32.565 27.897C31.3095 30.8265 28.1325 33.321 24.828 33.1995Z" fill="#ff291a"/>
+                            </svg>
+                        </div>
+                        <h6 class="mt-3 text-[16px] sm:text-lg font-semibold">Phone</h6>
+                        <p class="mt-2 text-[13px] sm:text-[15px] text-[#212121b3]">
+                            <a href="tel:+60 22332244">+959 973217426</a>
+                        </p>
+                    </div>
+                    <div class="mb-[30px] last:mb-0 transition-all duration-300 text-center bg-[#f8f9fc] p-6 rounded-lg border border-[rgb(0,0,0,0.1)] hover:border-[rgb(0,0,0,0.2)] zrcontactcard zraddress">
+                        <div class="zriconcontainer">
+                            <svg class="mx-auto max-w-[34px] w-[34px]" xmlns="http://www.w3.org/2000/svg" width="27" height="36" viewBox="0 0 27 36" fill="none">
+                                <path d="M15.1664 35.1C18.7734 30.5859 27 19.6453 27 13.5C27 6.04688 20.9531 0 13.5 0C6.04688 0 0 6.04688 0 13.5C0 19.6453 8.22656 30.5859 11.8336 35.1C12.6984 36.1758 14.3016 36.1758 15.1664 35.1ZM13.5 9C14.6935 9 15.8381 9.47411 16.682 10.318C17.5259 11.1619 18 12.3065 18 13.5C18 14.6935 17.5259 15.8381 16.682 16.682C15.8381 17.5259 14.6935 18 13.5 18C12.3065 18 11.1619 17.5259 10.318 16.682C9.47411 15.8381 9 14.6935 9 13.5C9 12.3065 9.47411 11.1619 10.318 10.318C11.1619 9.47411 12.3065 9 13.5 9Z" fill="#ff291a"/>
+                            </svg>
+                        </div>
+                        <h6 class="mt-3 text-[16px] sm:text-lg font-semibold">Address</h6>
+                        <div class="mt-2 text-[13px] sm:text-[15px] text-[#212121b3]">
+                            <p>Yangon, Myanmar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script>
+    // Typing animation for the job title
+    const text = "Full Stack Developer!";
+    const typingElement = document.getElementById("typing-text");
+    let index = 0;
+
+    function type() {
+      if (index < text.length) {
+        typingElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 100);
+      } else {
+        setTimeout(() => {
+          typingElement.textContent = "";
+          index = 0;
+          type();
+        }, 1000);
+      }
+    }
+    type();</script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
